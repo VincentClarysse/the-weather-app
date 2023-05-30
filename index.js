@@ -7,7 +7,7 @@ form.addEventListener("submit", showweather = async (e) => {
     
         let location = input.value;
         input.value="";
-        const result = await fetch('http://api.openweathermap.org/data/2.5/forecast?q='+location+'&units=metric&appid=3ee1b28549d7bac27faae1a3fead6ee4');
+        const result = await fetch('https://api.openweathermap.org/data/2.5/forecast?q='+location+'&units=metric&appid=3ee1b28549d7bac27faae1a3fead6ee4');
         const data = await result.json()
         console.log(data);
         console.log(data.cod);
